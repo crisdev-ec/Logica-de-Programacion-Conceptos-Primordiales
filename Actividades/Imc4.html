@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC4</title>
+</head>
+<body>
+    <h3>Programa Cálculo IMC</h3>
+    <div>
+        <script>
+            function saltoLinea(){
+                document.write("<br><br>");
+            }
+
+            function imrpimir(frase){
+                document.write(frase);
+                saltoLinea();
+            }
+            
+            function calcularImc(peso,altura){
+            
+                 return (peso / (altura * altura));  
+            }
+
+            var nombre = prompt("Ingrese su Nombre");
+            var pesoInformado = prompt(nombre + ", Ingrese su Peso");
+            var alruraInformado = prompt(nombre + ", Ingrese su altura");
+
+            imcCalculado=calcularImc(pesoInformado,alruraInformado);
+            imrpimir(nombre + " el IMC calculado es: " + imcCalculado);
+
+            if (imcCalculado < 18.5){
+                imrpimir("IMC abajo de lo Recomendado");   
+            }
+            if (imcCalculado >=18.5){
+
+                if (imcCalculado < 25){
+
+                    imrpimir("IMC esta dentro del intervalo Normal");
+                }
+            }
+            if (imcCalculado >=25){
+
+                if (imcCalculado < 30){
+
+                    imrpimir("IMC considerado como Sobrepeso");
+                }
+                }
+            if (imcCalculado >=30){
+                imrpimir("IMC considerado como Obesidad");
+            } 
+            
+        </script>
+    </div>
+</body>
+</html>

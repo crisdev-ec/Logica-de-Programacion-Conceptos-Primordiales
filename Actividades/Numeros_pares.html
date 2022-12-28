@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Númros Pares</title>
+</head>
+<body>
+    <h3>Programa - Calcula los Números Pares</h3>
+    <script>
+         function saltarLinea(){
+            document.write("<br><br>");
+        }
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var contador = 2;
+        imprimir("Números pares hasta el 100");
+
+        while(contador <= 100 ){
+            
+            imprimir(contador);
+            contador = contador + 2;//incrementar de dos en dos
+        }
+        imprimir("*** FIN ***");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundiales de la FiFa</title>
+</head>
+<body>
+    <h3>Programa - Año Mundial de la FiFa</h3>
+    <script>
+       function saltarLinea(){
+         document.write("<br><br>");
+       }
+       function imprimir(frase){
+         document.write(frase);
+         saltarLinea();
+       }
+
+       var anioMundial = 1930;
+       var aniolimite =  parseInt(prompt("Ingrese el año limite para calcular"));
+
+       while (anioMundial <= aniolimite){
+          imprimir("Hubo un Mundial de la FIFA en el año: " + anioMundial);//muestra el año
+          // De ahí procede a sumar + cada 4 años se dio cada mundial
+          anioMundial = anioMundial +4;   
+       }
+       imprimir(" ******** FIN ******** ");
+    </script>
+</body>
+</html>
